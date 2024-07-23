@@ -48,7 +48,7 @@ jobs:
           path: ./dist
       - name: Deploy with gh-pages
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/react-for-anything.git
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/sunflynf/react-for-anything.git
           yarn deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
