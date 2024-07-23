@@ -12,8 +12,6 @@ jobs:
         uses: actions/checkout@v4.1.7
       - name: Setup Node
         uses: actions/setup-node@v4.0.3
-        with:
-          node-version: 20
       - name: Install dependencies
         uses: yarn install
       - name: Build project
