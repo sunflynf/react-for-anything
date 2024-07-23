@@ -13,7 +13,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4.0.3
       - name: Install dependencies
-        uses: yarn install
+        uses: bahmutov/npm-install@v1
       - name: Build project
         run: yarn build
       - name: Upload production-ready build files
