@@ -25,7 +25,7 @@ jobs:
       #       path: ./dist
       - name: Deploy with gh-pages
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/sunflynf/gh-pages.git
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/react-for-anything/gh-pages.git
           npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
