@@ -15,6 +15,7 @@ export type Variant = {
 export type ButtonProps = {
   type?: "button" | "submit" | "reset";
   className?: string;
+  focusEffect?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   disabled?: boolean;
   children: any;

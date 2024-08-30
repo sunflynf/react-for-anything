@@ -1,10 +1,7 @@
-import clsx from "clsx";
+import { FlexBlock } from "./FlexBlock";
+import { GridBlock } from "./GridBlock";
 
-type BlockProps = {
-  children: any;
-  className?: string;
+export const Block = {
+  Flex: FlexBlock,
+  Grid: GridBlock,
 };
-
-export function Block({ children, className }: BlockProps) {
-  return <div className={clsx("px-[5%]", className)}>{children}</div>;
-}
